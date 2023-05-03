@@ -21,7 +21,7 @@ export default {
       },
       stopTimer(){
         clearInterval(this.timer);
-        console.log(this.score)
+        this.$emit("endGame",this.score)
       }
     },
     mounted(){
